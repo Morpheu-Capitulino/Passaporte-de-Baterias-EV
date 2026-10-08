@@ -220,7 +220,7 @@ function App() {
         <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           
           <div style={{ border: '1px solid #ccc', padding: '15px', borderRadius: '8px' }}>
-            <h3 style={{ marginTop: 0 }}>📡 BMS (IoT) - Telemetria</h3>
+            <h3 style={{ marginTop: 0 }}>BMS (IoT) - Telemetria</h3>
             <input type="text" placeholder="ID da Bateria" value={updateId} onChange={e => setUpdateId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="number" placeholder="Novo SoH (%)" value={newSoH} onChange={e => setNewSoH(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
             <button onClick={handleUpdateHealth} style={{ width: '100%', padding: '10px', cursor: 'pointer' }}>Atualizar Saúde</button>
@@ -246,7 +246,7 @@ function App() {
 
       {/* Consulta Pública */}
       <div style={{ marginTop: '30px', border: '2px solid #0056b3', padding: '20px', borderRadius: '8px', background: '#f4f8ff' }}>
-        <h2 style={{ marginTop: 0, color: '#0056b3', textAlign: 'center' }}>🔍 Público: Consultar Bateria</h2>
+        <h2 style={{ marginTop: 0, color: '#0056b3', textAlign: 'center' }}>Público: Consultar Bateria</h2>
         <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
           <input type="text" placeholder="ID da Bateria a pesquisar" value={batteryId} onChange={e => setBatteryId(e.target.value)} style={{ width: '50%', padding: '10px' }} />
           <button onClick={handleGetBatteryInfo} style={{ padding: '10px 20px', background: '#0056b3', color: 'white', border: 'none', cursor: 'pointer' }}>Consultar Passaporte</button>
@@ -269,7 +269,7 @@ function App() {
         {/* Histórico de Manutenções */}
         {maintenanceList.length > 0 && (
           <div style={{ marginTop: '15px', background: 'white', padding: '20px', borderRadius: '8px', border: '1px solid #b8daff' }}>
-            <h3 style={{ marginTop: 0, color: '#0056b3' }}>🔧 Histórico de Reparações ({maintenanceList.length})</h3>
+            <h3 style={{ marginTop: 0, color: '#0056b3' }}>Histórico de Reparações ({maintenanceList.length})</h3>
             <ul style={{ paddingLeft: '20px', margin: 0 }}>
               {maintenanceList.map((maint, index) => (
                 <li key={index} style={{ marginBottom: '15px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
