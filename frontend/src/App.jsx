@@ -227,7 +227,7 @@ function App() {
 
             <hr style={{ margin: '20px 0' }}/>
             
-            <h4 style={{ marginTop: 0 }}>🚨 Reportar Falha Crítica</h4>
+            <h4 style={{ marginTop: 0 }}>Reportar Falha Crítica</h4>
             <input type="text" placeholder="ID da Bateria" value={failId} onChange={e => setFailId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Código (ex: ERR-404)" value={errorCode} onChange={e => setErrorCode(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Gravidade (Alta/Média)" value={severity} onChange={e => setSeverity(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
@@ -235,7 +235,7 @@ function App() {
           </div>
 
           <div style={{ border: '1px solid #ccc', padding: '15px', borderRadius: '8px' }}>
-            <h3 style={{ marginTop: 0 }}>🔧 Oficina - Histórico</h3>
+            <h3 style={{ marginTop: 0 }}>Oficina - Histórico</h3>
             <input type="text" placeholder="ID da Bateria" value={maintId} onChange={e => setMaintId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Descrição do serviço" value={maintDesc} onChange={e => setMaintDesc(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
             <button onClick={handleLogMaintenance} style={{ width: '100%', padding: '10px', cursor: 'pointer' }}>Registrar Manutenção</button>
