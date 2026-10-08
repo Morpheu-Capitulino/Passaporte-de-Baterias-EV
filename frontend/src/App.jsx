@@ -195,7 +195,7 @@ function App() {
           <h3 style={{ marginTop: 0 }}>Painel Admin</h3>
           
           <div style={{ marginBottom: '20px', padding: '10px', background: '#f9f9f9' }}>
-            <h4>1. Autorizar Acessos</h4>
+            <h4>Autorizar Acessos</h4>
             <input type="text" placeholder="Endereço (0x...)" value={authAddress} onChange={e => setAuthAddress(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
             <div style={{ display: 'flex', gap: '10px' }}>
               <button onClick={() => handleAuthorize('oracle')} style={{ flex: 1, padding: '8px', cursor: 'pointer' }}>Autorizar BMS</button>
@@ -204,7 +204,7 @@ function App() {
           </div>
           
           <div style={{ padding: '10px', background: '#f9f9f9' }}>
-            <h4>2. Gestão de Baterias</h4>
+            <h4>Gestão de Baterias</h4>
             <input type="text" placeholder="ID (ex: BAT-001)" value={newBatteryId} onChange={e => setNewBatteryId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Fabricante" value={manufacturer} onChange={e => setManufacturer(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Endereço do Dono Inicial" value={ownerAddress} onChange={e => setOwnerAddress(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
