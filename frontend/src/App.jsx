@@ -55,10 +55,10 @@ function App() {
       
       const tx = await contract.registerBattery(newBatteryId, manufacturer, ownerAddress);
       await tx.wait();
-      alert("Bateria registada com sucesso!");
+      alert("Bateria registrada com sucesso!");
     } catch (error) {
       console.error(error);
-      alert("Erro ao registar.");
+      alert("Erro ao registrar.");
     }
   }
 
@@ -134,7 +134,7 @@ function App() {
       
       const tx = await contract.logMaintenance(maintId, maintDesc);
       await tx.wait();
-      alert("Manutenção registada!");
+      alert("Manutenção registrada!");
     } catch (error) {
       console.error(error);
       alert("Erro: Verifique se este endereço está autorizado como Oficina.");
@@ -210,7 +210,7 @@ function App() {
             <input type="text" placeholder="Endereço do Dono Inicial" value={ownerAddress} onChange={e => setOwnerAddress(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <button onClick={handleRegisterBattery} style={{ padding: '10px', background: '#222', color: 'white', cursor: 'pointer', border: 'none' }}>Registar Bateria</button>
+              <button onClick={handleRegisterBattery} style={{ padding: '10px', background: '#222', color: 'white', cursor: 'pointer', border: 'none' }}>Registrar Bateria</button>
               <button onClick={handleSetInUse} style={{ padding: '10px', background: '#28a745', color: 'white', cursor: 'pointer', border: 'none' }}>Marcar Bateria como "Em Uso"</button>
             </div>
           </div>
@@ -238,7 +238,7 @@ function App() {
             <h3 style={{ marginTop: 0 }}>🔧 Oficina - Histórico</h3>
             <input type="text" placeholder="ID da Bateria" value={maintId} onChange={e => setMaintId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Descrição do serviço" value={maintDesc} onChange={e => setMaintDesc(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
-            <button onClick={handleLogMaintenance} style={{ width: '100%', padding: '10px', cursor: 'pointer' }}>Registar Manutenção</button>
+            <button onClick={handleLogMaintenance} style={{ width: '100%', padding: '10px', cursor: 'pointer' }}>Registrar Manutenção</button>
           </div>
           
         </div>
