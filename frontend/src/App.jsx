@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import abiData from './EVBatteryPassport.json';
 
 // Cole o endereço gerado no deploy aqui
-const CONTRACT_ADDRESS = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"; 
+const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; 
 const CONTRACT_ABI = abiData.abi;
 
 function App() {
@@ -192,7 +192,7 @@ function App() {
       <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
         {/* Painel Admin */}
         <div style={{ flex: '1 1 400px', border: '2px solid #333', padding: '15px', borderRadius: '8px' }}>
-          <h3 style={{ marginTop: 0 }}>👑 Painel Admin</h3>
+          <h3 style={{ marginTop: 0 }}>Painel Admin</h3>
           
           <div style={{ marginBottom: '20px', padding: '10px', background: '#f9f9f9' }}>
             <h4>1. Autorizar Acessos</h4>
@@ -231,7 +231,7 @@ function App() {
             <input type="text" placeholder="ID da Bateria" value={failId} onChange={e => setFailId(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Código (ex: ERR-404)" value={errorCode} onChange={e => setErrorCode(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '5px' }} />
             <input type="text" placeholder="Gravidade (Alta/Média)" value={severity} onChange={e => setSeverity(e.target.value)} style={{ width: '95%', padding: '8px', marginBottom: '10px' }} />
-            <button onClick={handleReportFailure} style={{ width: '100%', padding: '10px', background: 'darkred', color: 'white', cursor: 'pointer', border: 'none' }}>Registar Falha</button>
+            <button onClick={handleReportFailure} style={{ width: '100%', padding: '10px', background: 'darkred', color: 'white', cursor: 'pointer', border: 'none' }}>Registrar Falha</button>
           </div>
 
           <div style={{ border: '1px solid #ccc', padding: '15px', borderRadius: '8px' }}>
